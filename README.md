@@ -1,22 +1,103 @@
-# The Authenticity Paradox in Traditional Crafts
+# README.md (Full Version)
 
-This repository contains the dataset and analysis code for the research paper:  
-**"The Authenticity Paradox: Cultural Knowledge Brokers as Mediators of Identity Threat and Psychological Reactance in Traditional Craft Industries"**
+# The Authenticity Paradox in Traditional Crafts: Data and Analysis
 
-## Overview
-This study investigates the psychological barriers to technology adoption in Japan's traditional craft industries. Using a dual-perspective mixed-methods approach (n=500 consumers, n=500 artisans), we identify a "Mediation Gap" where high consumer awareness paradoxically leads to lower adoption due to identity threat and psychological reactance.
+This repository contains the replication package, including anonymized datasets and Python analysis scripts, for the research paper:
 
-## Key Findings
-- **Awareness-Adoption Paradox**: Consumers with the highest awareness of technology exhibit the lowest purchase rates (1.2%).
-- **Mediation Imbalance**: Artisan discourse is heavily biased toward narrative mediation (78.2%), while visual/experiential mediation is critically absent (0.2%).
-- **Threshold Effect**: Price tolerance increases significantly only when authenticity concerns are fully resolved, not merely reduced.
+> **"The Authenticity Paradox: Cultural Knowledge Brokers as Mediators of Identity Threat and Psychological Reactance in Traditional Craft Industries"**
+> *Authors: Koki Arai and Yuko Oki (2026)*
 
-## Repository Structure
-- `data/`: Processed anonymized datasets (Consumer and Artisan).
-- `scripts/`: Python scripts for statistical analysis (Chi-square, ANOVA, Moderation Regression).
-- `requirements.txt`: List of Python dependencies.
+## 📌 Project Overview
 
-## Setup and Reproduction
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/your-username/authenticity-paradox.git](https://github.com/your-username/authenticity-paradox.git)
+Traditional craft industries face an existential paradox: technological innovation is essential for heritage preservation, yet its adoption often triggers an **identity threat** to the consumer's cultural self-concept. This leads to **psychological reactance**, where consumers resist adoption even when they are aware of the technology's benefits.
+
+Through a convergent mixed-methods design involving 500 consumers and 500 artisans in Japan, this study identifies a "Mediation Gap". We demonstrate that current artisan discourse is heavily biased toward narrative framing, leaving the experiential (visual) needs of consumers unaddressed.
+
+## 📂 Repository Structure
+
+```text
+.
+├── data/
+│   ├── consumer_survey_data.csv    # Anonymized consumer responses (n=500)
+│   └── artisan_survey_data.csv     # Anonymized artisan responses (n=500)
+├── scripts/
+│   └── statistical_analysis.py     # Main analysis script (Chi-square, ANOVA, OLS)
+├── requirements.txt                # Python dependency list
+├── LICENSE                         # MIT License text
+└── README.md                       # This file
+
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Python 3.8 or higher
+* All necessary libraries are listed in `requirements.txt`.
+
+### Installation and Execution
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/your-username/authenticity-paradox.git
+cd authenticity-paradox
+
+```
+
+
+2. **Install dependencies:**
+```bash
+pip install -r requirements.txt
+
+```
+
+
+3. **Run the analysis:**
+To reproduce the findings presented in Section 4 of the paper (Awareness-Adoption Paradox, Cluster Analysis, and Mediation Imbalance), execute:
+```bash
+python scripts/statistical_analysis.py
+
+```
+
+
+
+## 📊 Data Description & Measures
+
+Since original survey instruments were not initially designed with psychometric scales, we employ theoretically grounded **proxy measures**:
+
+* 
+**Identity Threat (Proxy)**: Measured via a 6-point Likert item assessing "concern about loss of traditional value".
+
+
+* **Psychological Reactance (Behavioral Proxy)**: Inferred through **Price Tolerance** (5-point scale). Reactance manifests as an unwillingness to pay a premium for products perceived as inauthentic.
+
+
+* 
+**Cultural Identification (Age Proxy)**: Younger cohorts are used as a proxy for heightened identification with tradition as a "scarce cultural resource".
+
+
+* 
+**Mediation Space (Qualitative)**: 2,352 artisan discourse segments coded into Narrative (78.2%), Visual (0.2%), and Economic (17.6%) categories.
+
+
+
+## 💰 Funding
+
+This work was supported by **JSPS KAKENHI** (Japan Society for the Promotion of Science):
+
+* Grant Number: **22H00881** 
+
+
+* Grant Number: **23K01404** 
+
+
+
+## ⚖️ License
+
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute the code and data for academic purposes, provided that appropriate credit is given to the original authors. (See the `LICENSE` file for full text).
+
+## ✉️ Contact
+
+For inquiries regarding the methodology or dataset, please contact:
+**Koki Arai** - [Your University Profile Link or Email]
+
